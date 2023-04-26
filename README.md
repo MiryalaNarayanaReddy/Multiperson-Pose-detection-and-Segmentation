@@ -1,4 +1,4 @@
-# Multiperson Pose2Seg 
+# Multiperson Pose Detection and Segementation
 This project combine both the codes of [Pos2Seg](https://github.com/MiryalaNarayanaReddy/Pose2Seg) and [Multiperson pose estimation](https://github.com/MiryalaNarayanaReddy/multi-person-pose-estimation) and gets the colored segmentations of humans.
 
 Results can be viewed in videoes 
@@ -41,8 +41,8 @@ or
 ```
 python realtime_test_pos2seg.py --weights pose2seg_release.pkl --source <video> --save_dir <path>
 ```
-![](./figure/readme_images/results/dv1.png)
-![](./figure/readme_images/results/dv2.png)
+![segmented img 1](./figure/readme_images/results/dv1.png)
+![segmented img 2](./figure/readme_images/results/dv2.png)
 
 ## 3b) For key points (using yolov7-mediapipe pipeline)
 
@@ -50,7 +50,7 @@ python realtime_test_pos2seg.py --weights pose2seg_release.pkl --source <video> 
 python detect_pose.py --source <video>
 ```
 
-![](./figure/readme_images/bus.jpg)
+![pose image](./figure/readme_images/bus.jpg)
 
 
 ## 3c) if you have keypoints already
@@ -85,7 +85,6 @@ This will give you the cropped segmented images in the save_dir folder.
 
 ![image](./figure/readme_images/multiperson_pose_estimation_2.png)
 
-<!-- ![image](./figure/readme_images/results/dv2.png) -->
 __________________________
 
 _______________________
