@@ -1,5 +1,5 @@
 # Multiperson Pose Detection and Segementation
-This project combine both the codes of [Pos2Seg](https://github.com/MiryalaNarayanaReddy/Pose2Seg) and [Multiperson pose estimation](https://github.com/MiryalaNarayanaReddy/multi-person-pose-estimation) and gets the colored segmentations of humans.
+This project combines both the codes of [Pos2Seg](https://github.com/MiryalaNarayanaReddy/Pose2Seg) and [Multiperson pose estimation](https://github.com/MiryalaNarayanaReddy/multi-person-pose-estimation) and gets the colored segmentations of humans.
 
 Results can be viewed in videoes 
 
@@ -18,19 +18,19 @@ Results can be viewed in videoes
 ```
 git clone <repo url>
 ```
-2. create new environment from environment.yml (they enough to run all codes in this repo) 
+2. create new environment from environment.yml (this is for all codes in this repo) 
 
 ```
 conda env create -f environment.yml
 ```
 
-# 2. download models
+# 2. Download models
 1. pos2seg_release.pkl from [here](https://drive.google.com/file/d/193i8b40MJFxawcJoNLq1sG0vhAeLoVJG/view?usp=sharing)
 2. yolov7-w6.pt from [here](https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7-w6.pt)
 3. yolov7.pt from [here](https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7.pt)
 
 
-# 3. running one your images/videos
+# 3. Running on your own images/videos
 
 ## 3a) for segmentation (using yolov7-medipipe-pos2seg pipeline)
 
