@@ -174,6 +174,8 @@ We retrained our model using this repo, and got similar results with our paper. 
 
 This repo already contains a template file `modeling/templates.json` which was used in our paper. But you are free to explore different cluster parameters as discussed in our paper. See [visualize_cluster.ipynb](visualize_cluster.ipynb) for an example.
 
+## Issues faced:
 
-
-
+1. OpenPose would not run on our setup so we use yoloV7 and Mediapipe for bounding box estimation and keypoint detection respectively.
+2. We tried to test our model realtime through the use of our webcam but this would not work as the environment was setup in WSL. WSL had issues connecting to the camera so we could not conduct this experiment.
+3. We also tried testing our model on IPCamera, where we connect to a remote camera and run the model on what it is treaming. However, since the framerate was too high, our model could not process this.
